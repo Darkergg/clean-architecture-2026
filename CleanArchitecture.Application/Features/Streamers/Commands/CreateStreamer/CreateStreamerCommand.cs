@@ -1,9 +1,8 @@
-﻿using CleanArchitecture.Domain;
-using MediatR;
+﻿using MediatR;
 
 namespace CleanArchitecture.Application.Features.Streamers.Commands
 {
-    public class StreamerCommand : IRequest<int>
+    public class CreateStreamerCommand : IRequest<int>
     {
         public string Name { get; set; } = string.Empty;
 

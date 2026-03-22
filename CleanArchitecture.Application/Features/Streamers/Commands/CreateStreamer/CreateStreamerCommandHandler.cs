@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CleanArchitecture.Application.Features.Streamers.Commands
 {
-    public class CreateStreamerCommandHandler : IRequestHandler<StreamerCommand, int>
+    public class CreateStreamerCommandHandler : IRequestHandler<CreateStreamerCommand, int>
     {
         private readonly IStreamerRepository _streamerRepository;
         private readonly IMapper _mapper;
@@ -23,7 +23,7 @@ namespace CleanArchitecture.Application.Features.Streamers.Commands
             _logger = logger;
         }
 
-        public async Task<int> Handle(StreamerCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(CreateStreamerCommand request, CancellationToken cancellationToken)
         {
             var streamerEntity = _mapper.Map<Streamer>(request);
             var newStreamer = await _streamerRepository.AddAsync(streamerEntity);
