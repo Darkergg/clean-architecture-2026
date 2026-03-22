@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/doc/" />
+  <Folder Name="/src/" />
+  <Folder Name="/src/API/">
+    <Project Path="CleanArchitecture/CleanArchitecture.csproj" Id="02ef7cc6-c373-401b-b0ad-8d4c993180de" />
+  </Folder>
+  <Folder Name="/src/Core/">
+    <Project Path="CleanArchitecture.Application/CleanArchitecture.Application.csproj" Id="146ecc22-a2d8-4fee-a356-03e00c7163ca" />
+    <Project Path="CleanArchitecture.Domain/CleanArchitecture.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="CleanArchitecture.Data/CleanArchitecture.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/test/" />
+</Solution>
